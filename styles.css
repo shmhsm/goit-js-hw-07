@@ -1,0 +1,24 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Щоб картинки переносилися на новий рядок */
+    gap: 20px;
+    /* Відступ між картинками */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item {
+    flex-basis: calc((100% - 40px) / 3);
+    /* Робимо по 3 картинки в ряд */
+}
+
+.gallery-img {
+    width: 100%;
+    /* Щоб картинка займала всю ширину li */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* Щоб картинки не деформувалися */
+}
